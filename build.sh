@@ -35,6 +35,8 @@ aws ecr get-login-password --region "${REGION}" | docker login --username AWS --
 ## 1.2 Build AI service image
 echo "Building boston housing image."
 aws s3 cp "${MODEL_URI}" ./model --recursive
+# Remove later...
+docker login --username eason130726 --password MachineLearning
 docker build -t "${ECR_REPO_FULL_NAME}:latest" -f Dockerfile . || exit
 docker tag "${ECR_REPO_FULL_NAME}:latest" "${ECR_REPO_FULL_NAME}:${TAG}" || exit
 
