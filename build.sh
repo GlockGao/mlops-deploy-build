@@ -12,6 +12,7 @@ echo "Logging in to Amazon ECR."
 # Get the account number associated with the current IAM credentials
 ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
 TAG=$(echo "${CODEBUILD_RESOLVED_SOURCE_VERSION}" | head -c 8)
+
 echo "###################################"
 echo "Image name : ${IMAGE}"
 echo "Image tags : ${TAG}"
