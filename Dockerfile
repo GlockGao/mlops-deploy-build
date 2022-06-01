@@ -8,6 +8,7 @@ RUN apt update \
     && pip3 install mlflow==1.24.0 \
     && pip3 install protobuf~=3.19.0 \
     && pip3 install boto3==1.23.10 \
+    && pip3 install scikit-learn==1.0.2 \
     && pip3 install pymysql==1.0.2 \
     && mkdir -p /mlflow/ \
     && rm -rf ~/.cache/pip \
