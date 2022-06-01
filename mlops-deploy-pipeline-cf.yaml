@@ -111,7 +111,7 @@ Resources:
           - Name: REPOSITORY_URI
             Value: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/${EcrDockerRepository}
           - Name: MODEL_URI
-            Value: s3://yugaozh-mlops-stage-store/tracking-server/1/640994cb62ac49a6abd03e99b98df0bc/artifacts/model/
+            Value: s3://yugaozh-mlops-stage-store/tracking-server/1/60d1547e30d74663b0971161d1f55f47/artifacts/model/
       Name: !Ref AWS::StackName
       ServiceRole: !Sub arn:aws:iam::${AWS::AccountId}:role/mlflow-eks-CodeBuildServiceRole
 

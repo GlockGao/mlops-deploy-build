@@ -1,0 +1,23 @@
+version: 0.2
+
+env:
+  variables:
+    REGION: us-west-2
+    IMAGE: yugaozh-mlops-stage-mlflow-boston-housing
+    MODEL_URI: s3://yugaozh-mlops-stage-store/tracking-server/1/60d1547e30d74663b0971161d1f55f47/artifacts/model/
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - echo Install started on `date`
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - ./build.sh
+
+  post_build:
+    commands:
+      - echo Post build started on `date`
