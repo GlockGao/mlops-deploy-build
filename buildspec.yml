@@ -4,7 +4,7 @@ env:
   variables:
     REGION: us-west-2
     IMAGE: yugaozh-mlops-stage-mlflow-boston-housing
-    MODEL_URI: s3://yugaozh-mlops-stage-store/tracking-server/1/3bf9da811b4f4c28a24e1d6a597ae0fd/artifacts/model/
+    MODEL_URI: s3://yugaozh-mlops-stage-store/tracking-server/1/651a25692a4147a1ab62580e27bb1606/artifacts/model/
 
 phases:
   install:
